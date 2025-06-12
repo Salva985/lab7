@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/pizzaBackground.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .form-container {
+    background-color: rgba(254, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 700px;
+    border: 2px solid white;
+  }
+  
+  h1 {
+    color: #d7263d;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #00000033;
+  }
+  
+  h2,
+  legend {
+    color: #f20e0e;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  fieldset {
+    border: 2px dashed #f20e0e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  
+  label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0e7007;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 10px;
+    border: 2px solid #0e7007;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .form-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    color: #333;
+    
+  }
+  
+  .inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .inline-group select {
+    width: auto;
+    padding-right: 20px;
+  }
+  
+  .inline-group input[type="text"] {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .range-hint {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #f20e0e;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #0e7007;
+  }
+  
+  button {
+    background-color: #f20e0e;
+    padding: 0.8rem 1.5rem;
+    color: #feffff;
+    border: 2px solid #0e7007;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+    align-self: center;
+  }
+  
+  button:hover {
+    background-color: #0e7007;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  /* Estilo base del range */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #0e7007 0%, #0e7007 40%, #f4a300 60%, #d7263d 100%);
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+  
+  /* Números debajo del slider */
+  .range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #444;
+    padding: 0 2px;
+  }
+  
+  .range-hint {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: -5px;
+  }
+
+  .section-divider {
+    border: none;
+    height: 2px;
+    background-color: #f20e0e; 
+    margin: 20px 0;
+  }

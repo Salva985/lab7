@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario para tienda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>🍕 Place your order below 🍕</h1>
+
+      <form action="#" method="POST">
+<fieldset>
+  <legend> Personal Informations </legend>
+
+        <div class="inline-group">
+          <select id="srSra" name="srSra">
+            <option value="sr">Sr.</option>
+            <option value="sra">Sra.</option>
+            <option value="other">Otre</option>
+          </select>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <label for="telephone">Phone: </label>
+        <input type="tel" id="tel" name="phone" required />
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required />
+      </fieldset>
+
+
+      <fieldset>
+        <legend> Pizza order </legend>
+      
+        <label for="pizzas">Select you favorite pizza</label>
+        <select id="pizzas" name="pizzas">
+          <option value="margherita">Margherita</option>
+          <option value="4cheese">4 Cheese</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="napoli">Napoli</option>
+          <option value="mortadella">Mortadella</option>
+          <option value="vegetarian">Vegeterian</option>
+        </select>
+
+        <h2>Select extra toppings:</h2>
+
+        <div class="form-group">
+        <label><input type="checkbox" name="toppings" value="cheese" />Cheese</label>
+        <label><input type="checkbox" name="toppings" value="mushroom" />Mushroom</label>
+        <label><input type="checkbox" name="toppings" value="anchovies" />Anchovies</label>
+        <label><input type="checkbox" name="toppings" value="jalapeno" />Jalapeño</label>
+        <label><input type="checkbox" name="toppings" value="pepperoni" />Pepperoni</label>
+        <label><input type="checkbox" name="toppings" value="mozzarella" />Mozzarella</label>
+        <label><input type="checkbox" name="toppings" value="onion" /> Onion</label>
+        <label><input type="checkbox" name="toppings" value="black-olives" />Olives</label>
+        <label><input type="checkbox" name="toppings" value="bacon" />Bacon</label>
+        <label><input type="checkbox" name="toppings" value="artichoke" />Artichokes</label>
+      </div>
+
+      <hr class="section-divider">
+
+      <label for="spicy">Spiciness Level:</label>
+          <input type="range" id="spicy" name="spicy" min="0" max="5" step="1" />
+          <div class="range-labels">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <p class="range-hint">0 = 🧊😀 suave &nbsp;&nbsp; 5 = 🔥🥵 muy picante</p>
+
+          <hr class="section-divider">
+
+        <div class="form-group">
+          <label>
+            <input type="radio" name="method" value="delivery" />
+            Delivery
+          </label>
+        
+          <label>
+            <input type="radio" name="method" value="pickup" />
+            Pick Up
+          </label>
+        </div>
+
+        
+      </fieldset>
+
+        <label for="comment">Comment: </label>
+        <textarea
+          id="comment"
+          name="comment"
+          maxlength="50"
+          placeholder="Write your message here...(Max 50 chars)"
+        ></textarea>
+
+       <!--  <div class="form-group"></div>
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I accept the <a href="#">terms and conditions</a></label>
+        </div> -->
+
+        <button type="submit">Send Order</button>
+      </form>
+    </div>
+  </body>
+</html>
