@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario para tienda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Place your order below 🍕</h1>
+
+      <form action="#" method="POST">
+
+        <div class="inline-group">
+          <select id="srSra" name="srSra">
+            <option value="sr">Sr.</option>
+            <option value="sra">Sra.</option>
+            <option value="other">Otre</option>
+          </select>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <label for="telephone">Phone: </label>
+        <input type="tel" id="tel" name="phone" required />
+
+        <label for="pizzas">Select you favorite pizza</label>
+        <select id="pizzas" name="pizzas">
+          <option value="margherita">Margherita</option>
+          <option value="4cheese">4 Cheese</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="napoli">Napoli</option>
+          <option value="mortadella">Mortadella</option>
+          <option value="vegetarian">Vegeterian</option>
+        </select>
+
+        <h2>Select extra toppings:</h2>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="extraCheese"
+            name="toppings"
+            value="cheese"
+          />
+          <label for="extraCheese">Extra Cheese</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="mushroom"
+            name="toppings"
+            value="mushroom"
+          />
+          <label for="mushroom">Mushroom</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="anchovies"
+            name="toppings"
+            value="anchovies"
+          />
+          <label for="anchovies">Anchovies</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="jalapeno"
+            name="toppings"
+            value="jalapeno"
+          />
+          <label for="jalapeno">Jalapeño</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="pepperoni"
+            name="toppings"
+            value="pepperoni"
+          />
+          <label for="pepperoni">Pepperoni</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="mozzarella"
+            name="toppings"
+            value="mozzarella"
+          />
+          <label for="mozzarella">Mozzarella</label>
+        </div>
+
+        <h2>Select one option:</h2>
+
+        <div class="form-group">
+          <input type="radio" id="delivery" name="method" value="delivery" />
+          <label for="delivery">Delivery</label>
+        </div>
+
+        <div class="form-group">
+          <input type="radio" id="pickup" name="method" value="pickup" />
+          <label for="pickup">Pick Up</label>
+        </div>
+
+        <label for="comment">Comment: </label>
+        <textarea
+          id="comment"
+          name="comment"
+          maxlength="50"
+          placeholder="Write your message here...(Max 50 chars)"
+        ></textarea>
+
+        <button type="submit">Send Order</button>
+      </form>
+    </div>
+  </body>
+</html>
