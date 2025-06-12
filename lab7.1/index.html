@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario de consulta</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Inquiry Form</h1>
+      <form action="#" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="John"/>
+
+        <label for="surname">Surname: </label>
+        <input type="text" id="surname" name="surname" required placeholder="Redd"/>
+
+        <label for="age">Age(minimun 18yo): </label>
+        <input type="number" id="age" name="number" min="18" placeholder="18+"/>
+
+        <label for="email">*Email: </label>
+        <input type="email" id="email" name="email" required placeholder="johnredd@gmail.com"/>
+
+        <label for="case">*Case: </label>
+        <input type="text" id="case" name="case" required maxlength="50" placeholder="Subject"/>
+
+        <label for="comment">Comment: </label>
+        <textarea
+          id="comment"
+          name="comment"
+          required
+          maxlength="150"
+          placeholder="Write your message here...(Max 150 chars)"
+        ></textarea>
+
+        <button type="submit">Send Form</button>
+      </form>
+    </div>
+  </body>
+</html>
